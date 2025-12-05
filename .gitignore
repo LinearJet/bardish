@@ -82,3 +82,10 @@ windows/flutter/ephemeral/
 
 # macOS
 macos/Flutter/ephemeral/
+
+# Workspace
+.metadata
+
+# Archives
+*.zip
+*.tar.gz
