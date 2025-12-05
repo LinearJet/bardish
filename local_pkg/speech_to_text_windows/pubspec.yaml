@@ -1,0 +1,13 @@
+name: speech_to_text_windows
+version: 1.0.0+beta.8
+description: Dummy implementation to disable STT on Windows
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  speech_to_text_platform_interface: ^2.0.0
+  flutter:
+    sdk: flutter
+
+flutter:
+  # Intentionally omitted plugin configuration to prevent native registration

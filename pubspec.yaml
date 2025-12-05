@@ -1,0 +1,74 @@
+name: bard_ish
+description: A minimalist note-taking app with a void aesthetic.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI & Animations
+  cupertino_icons: ^1.0.6
+  animated_text_kit: ^4.2.2
+  
+  # THE NEW DATABASE (Hive)
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  uuid: ^4.2.1 
+  dynamic_color: ^1.7.0
+  m3e_collection: ^0.3.7
+  flutter_markdown_plus: ^1.0.0
+  qr: ^3.0.2
+  vector_math: ^2.1.4
+  archive: ^3.4.9
+  pdf: ^3.10.7
+  path_provider: ^2.1.2
+  share_plus: ^7.2.1
+  permission_handler: ^12.0.1
+  file_picker: ^8.0.0
+  device_info_plus: ^10.0.0
+  watcher: ^1.1.0 
+  local_auth: ^2.2.0
+  flutter_secure_storage: ^9.0.0
+  image_picker: ^1.2.1
+  speech_to_text: ^7.3.0 
+  google_mlkit_text_recognition: ^0.15.0
+  http: ^1.6.0
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  flutter_lints: ^3.0.0
+  
+  # Generators
+  build_runner: ^2.4.8
+  hive_generator: ^2.0.1
+  
+  # Icon Generator (NEW)
+  flutter_launcher_icons: ^0.13.1
+
+dependency_overrides:
+  dynamic_color: 1.7.0
+  speech_to_text_windows:
+    path: ./local_pkg/speech_to_text_windows
+
+flutter:
+  uses-material-design: true
+  
+  # Ensure assets are included if we use them in-app later
+  assets:
+    - assets/
+
+# --- LAUNCHER ICON CONFIG ---
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon.png"
+  min_sdk_android: 21 # Support older androids just in case
+  adaptive_icon_background: "#1C1918" # Your deep dark background color
+  adaptive_icon_foreground: "assets/icon.png" # The logo itself
+  
